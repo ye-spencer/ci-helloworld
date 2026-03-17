@@ -1,5 +1,5 @@
 # For Java 11, try this
-FROM adoptopenjdk/openjdk17:latest AS build
+FROM eclipse-temurin:17-jdk AS build
 ARG JAR_FILE=workspace/build/libs/ci-helloworld-1.0-SNAPSHOT.jar
 RUN mkdir -p /workspace
 COPY build.gradle /workspace
